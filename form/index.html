@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="images/PikPng.com_homero-png_2677748.png" alt="" srcset="">
+        </div>
+        <div class="rightside">
+            <h1>Faça o Login</h1>
+
+            <form action="home.html" method="POST" class="validator">
+                <label for="name">
+                    Seu usuário:<br />
+                    <input id="user" type="text" name="name" data-rules="min=2" />
+                </label>
+
+                <label for="password">
+                    Sua senha:<br />
+                    <input id="pass" type="password" name="password" data-rules="min=4" />
+                </label>
+                <label for="Cadastrar">
+                    <input type="submit" value="Enviar">
+                </label>
+                <label for="Cadastrar">
+                    <input type="button" value="Cancelar" onclick="clearForm()">
+                </label>
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
